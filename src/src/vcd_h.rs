@@ -1,5 +1,7 @@
 use super::*;
 
+pub const VCD_SIGNAL_COUNT: i32 = 32;
+
 pub(crate) type TimestampT = u32;
 
 #[repr(C)]
