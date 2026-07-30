@@ -340,11 +340,7 @@ pub(crate) extern "C" fn vcd_get_signal_by_name(
                 }
                 break '__c2;
             }
-            {
-                let __p = &mut i;
-                *__p += 1;
-                *__p
-            };
+            i += 1;
         }
     }
     return 0 as *mut () as *mut SignalT;
@@ -369,11 +365,7 @@ pub(crate) extern "C" fn vcd_signal_get_value_at_timestamp(
                 previous_value = &raw mut (*value_change).value[0 as usize] as *mut i8;
                 break '__c3;
             }
-            {
-                let __p = &mut i;
-                *__p += 1;
-                *__p
-            };
+            i += 1;
         }
     }
     return previous_value;

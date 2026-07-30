@@ -21,7 +21,7 @@ pub(crate) struct SignalT {
 }
 
 #[repr(C)]
-#[derive(Copy, Clone)]
+#[derive(Copy, Clone, Default)]
 pub(crate) struct TimescaleT {
     pub(crate) unit: [i8; 8],
     pub(crate) scale: u64,

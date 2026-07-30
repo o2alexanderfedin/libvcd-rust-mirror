@@ -47,21 +47,13 @@ pub(crate) extern "C" fn print_vcd(vcd: &mut VcdT) -> () {
                             };
                             break '__c5;
                         }
-                        {
-                            let __p = &mut j;
-                            *__p += 1;
-                            *__p
-                        };
+                        j += 1;
                     }
                 }
                 unsafe { printf(c"\t\t\t},\n\t\t},\n".as_ptr() as *mut i8 as *const i8) };
                 break '__c4;
             }
-            {
-                let __p = &mut i;
-                *__p += 1;
-                *__p
-            };
+            i += 1;
         }
     }
     unsafe { printf(c"\t}\n}\n".as_ptr() as *mut i8 as *const i8) };

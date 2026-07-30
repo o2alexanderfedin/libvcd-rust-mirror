@@ -16,7 +16,7 @@ pub extern "C" fn main(argc: i32, argv: *const *mut i8) -> i32 {
 }
 
 #[repr(C)]
-#[derive(Copy, Clone)]
+#[derive(Copy, Clone, Default)]
 pub(crate) struct SFILE {
     pub(crate) _opaque: [u8; 0],
 }
